@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="signin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Flexbox container to center the content */
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;  /* Horizontally center */
+            align-items: center;      /* Vertically center */
+            height: 100vh;            /* Full viewport height */
+        }
+
+        .card {
+            width: 23rem;
+            border-radius: 25px;
+            background-color: #f0f5f5;
+        }
+    </style>
+</head>
+
+<body>
+<div class="center-container">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title text-center"><b>Sign In</b></h1>
+            <form name="Form1" action="signin.php" method="get">
+                <table class="table table-borderless">
+                    <tr>
+                        <td><b>Email: </b></td>
+                        <td><input type="email" name="u" value="" size="25" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Password: </b></td>
+                        <td><input type="password" name="p" value="" size="25" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Sign In as: </b></td>
+                        <td>
+                            <select name="l" class="form-control">
+                                <option value="owner">Owner</option>
+                                <option value="tenant">Tenant</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <center>
+                    <br>
+                    <input type="submit" value="Sign In" class="btn btn-primary">
+                    <br><br>
+                    <p>New User? <a href="signup.html" class="btn btn-secondary"><b>Sign Up here</b></a></p>
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

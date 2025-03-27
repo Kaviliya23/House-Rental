@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Owner Sign Up</title>
+    <style>
+        body {
+            background-color: #e9ecef; /* Light background color for the page */
+        }
+        .card {
+            border-radius: 25px;
+            background-color: #f0f5f5;
+            margin: 50px auto; /* Center the card */
+            width: 23rem; /* Set card width */
+        }
+        .card-title {
+            text-align: center;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 1.5rem; /* Space between form groups */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Sign Up</h1>
+            <form name="Form2" action="ownersignup.php" method="POST">
+                <div class="form-group">
+                    <label for="name"><b>Name:</b></label>
+                    <input type="text" class="form-control" id="name" name="f" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" class="form-control" id="email" name="e" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"><b>Password:</b></label>
+                    <input type="password" class="form-control" id="password" name="p" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile"><b>Mobile No:</b></label>
+                    <input type="tel" class="form-control" id="mobile" name="m" required>
+                </div>
+                <div class="form-group">
+                    <label for="houses"><b>Number Of Houses:</b></label>
+                    <input type="number" class="form-control" id="houses" name="n" required>
+                </div>
+                <div class="form-group">
+                    <label for="country"><b>Country:</b></label>
+                    <input type="text" class="form-control" id="country" name="c" required>
+                </div>
+                <div class="form-group">
+                    <label for="city"><b>City:</b></label>
+                    <input type="text" class="form-control" id="city" name="ci" required>
+                </div>
+                <div class="form-group">
+                    <label for="address"><b>Address:</b></label>
+                    <input type="text" class="form-control" id="address" name="a" required>
+                </div>
+                <button type="submit" class="btn btn-primary" name="submit">Sign Up</button>
+            </form>
+            <p class="mt-3">Already a member? <a href="signin.html"><b>Sign in here</b></a></p>
+        </div>
+    </div>
+</body>
+</html>

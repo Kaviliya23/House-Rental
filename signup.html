@@ -1,0 +1,71 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="signin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            height: 100vh;          
+        }
+
+        .card {
+            width: 23rem;
+            border-radius: 25px;
+            background-color: #f0f5f5;
+            padding: 20px;
+        }
+
+        .card-body {
+            text-align: center; 
+        }
+
+        .card-body form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+
+        .card-body form select, 
+        .card-body form input[type="submit"] {
+            margin-bottom: 20px;
+            width: 100%; 
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="center-container">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title"><b>Sign Up</b></h1>
+            <br>
+            <form name="Form1" action="signup.php" method="get">
+                <b>Sign Up as: </b>
+                <select name="s" class="form-control">
+                    <option value="owner">Owner</option>
+                    <option value="tenant">Tenant</option>
+                </select>
+                <input type="submit" value="Submit" class="btn btn-success">
+            </form>
+            <p>Already a member? 
+               <a href="signin.html" class="btn btn-secondary">
+                   <b>Sign in here</b>
+               </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
